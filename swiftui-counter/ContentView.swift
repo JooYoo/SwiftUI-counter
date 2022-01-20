@@ -19,22 +19,17 @@ struct ContentView: View {
             HStack{
                 Button("-", action: {
                     count -= 1
-                })
-                .padding()
-                .font(.system(size: 30))
-               
+                }).padding()
+                
                 Button("reset", action: {
                     count = 0
-                })
-                .padding()
-                .font(.system(size: 30))
+                }).padding()
                 
                 Button("+", action: {
                     count += 1
-                })
-                .padding()
-                .font(.system(size: 30))
+                }).padding()
             }
+            .font(.system(size: 30))
         }
         
     }
